@@ -1,10 +1,12 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { CgMenuRightAlt, CgClose } from "react-icons/cg";
 import logo from "./img/Red_Creative_Letter_K_Monogram_Logo__1_-removebg-preview.png";
 
 export default function Hero() {
+  const [theme, setTheme] = useState([]);
   const navLink = ["Accueil", "Apropos", "Compétences", "Contactes"];
 
   return (
@@ -17,16 +19,28 @@ export default function Hero() {
           <div className="nav-link">
             <ul>
               {navLink.map((e, i) => (
-                <li key={i}>
-                  <Link to={e}>{e}</Link>
+                <li key={i} className={e == "Accueil" ? "active" : "link"}>
+                  <Link className={e == "Accueil" ? "active" : "link"} to={e}>
+                    {e}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="dark-mode-toggle">
-            <FiSun className="icon" />
+          <div
+            className="dark-mode-toggle"
+            onClick={() => {
+              setTheme(theme == "dark" ? "light" : "dark");
+            }}
+          >
+            {/* <FiSun className="icon" /> */}
             {/* <FiMoon className="icon"/> */}
+            {theme === "dark" ? (
+              <FiSun className="icon" />
+            ) : (
+              <FiMoon className="icon" />
+            )}
           </div>
 
           <div className="hamburger-menu-btn">
