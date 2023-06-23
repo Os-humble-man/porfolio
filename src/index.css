@@ -1,43 +1,108 @@
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+li {
+  list-style: none;
 }
-
 a {
   text-decoration: none;
   color: initial;
 }
-li {
-  list-style: none;
-}
 
 .full-container {
+  background: purple;
   width: 100vw;
   height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Karla", sans-serif;
+}
+
+.frame1 {
+  background-image: url("./components/img/bg.jpg");
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+}
+.icon {
+  width: 3vw;
+  height: 3vh;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10vh;
   position: absolute;
   top: 0;
   left: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background-color: #4567;
-  scroll-behavior: smooth;
 }
 
-.header {
-  width: 100vw;
-  height: 100vh;
-  background: #a88f8f;
+.header .logo,
+.header .dark-mode-toggle,
+.header .nav-link {
+  height: 100%;
 }
-.nav {
+.header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+}
+
+.logo {
+  color: #ffff;
+  font-size: 2.5rem;
+  font-family: "Niconne", cursive;
+}
+.header .nav-link ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 50px;
+  align-items: center;
+  width: fit-content;
+  min-width: 50vw;
+}
+
+.frame1 .left-side,
+.frame1 .right-side {
+  height: 100%;
+}
+
+.frame1 .left-side {
+  display: flex;
+  justify-content: end;
+  background: linear-gradient(120deg, #ffa800, #be5a11);
+  width: 35%;
+}
+
+.frame1 .left-side {
+  display: flex;
+  justify-content: end;
+  background: linear-gradient(120deg, #ffa800, #be5a11);
+  width: 35%;
+}
+
+.frame1 .right-side {
+  background: #282525f7;
+  width: 65%;
+}
+/* .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 50px 0 50px; */
+  padding: 0 50px 0 50px;
   width: 90%;
   margin: 0 auto;
 
@@ -86,7 +151,7 @@ li {
     #ffa800 3.42%,
     rgba(190, 90, 17, 0.99) 101.86%
   );
-}
+} */
 
 .hamburger-menu-btn {
   display: none;
