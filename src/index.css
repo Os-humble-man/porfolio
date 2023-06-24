@@ -18,6 +18,8 @@ a {
   font-family: "Karla", sans-serif;
 }
 
+/* Header section */
+
 .frame1 {
   background-image: url("./components/img/bg.jpg");
   display: flex;
@@ -26,7 +28,9 @@ a {
   background-size: cover;
   height: 85vh;
 }
-
+.frame{
+  width: 100%;
+}
 .dark-mode-toggle {
   display: flex;
   justify-content: center;
@@ -39,21 +43,19 @@ a {
   cursor: pointer;
   color: #ffa800;
 }
-.icon:hover{
-
- color: #ffff;
- background-color: #ffa800;
- padding: 10px;
- border-radius: 50%;
-
+.icon:hover {
+  color: #ffff;
+  background-color: #ffa800;
+  padding: 10px;
+  border-radius: 50%;
 }
 
-.nav-link .link{
+.nav-link .link {
   color: #ffff;
   font-size: 18px;
 }
 
-.nav-link .active{
+.nav-link .active {
   color: #ffa800;
   font-size: 22;
   font-weight: bold;
@@ -109,17 +111,106 @@ a {
   width: 35%;
 }
 
-.frame1 .left-side {
-  display: flex;
-  justify-content: end;
-  background: linear-gradient(120deg, #ffa800, #be5a11);
-  width: 35%;
-}
 
+.left-side img {
+  height: 100%;
+  transform: scaleX(-1);
+  translate: 5.5vw 0;
+}
 .frame1 .right-side {
   background: #282525f7;
   width: 65%;
 }
 .hamburger-menu-btn {
   display: none;
+}
+.right-side {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-level-1 {
+  display: flex;
+  align-items: center;
+}
+.header-level-1 .hand img {
+  width: 70px;
+  height: 70px;
+}
+.heading .header-level-1 span {
+  font-size: 3rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #ffff;
+  font-style: italic;
+}
+
+.header-level-2 {
+  font-size: 44px;
+  color: #ffa800;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+}
+
+.header-level-3 span {
+  font-size: 3rem;
+  color: #ffff;
+}
+.content {
+  width: 80%;
+  color: #ffff;
+  padding: 10px 20px;
+  line-height: 1.5;
+  padding: 20px 0px 20px;
+}
+
+.btns {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  justify-content: flex-end;
+  gap: 50px;
+}
+.btns .btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btns .start {
+  background-color: #ffa800;
+}
+.btns .project {
+  border: 2px solid #ffa800;
+  color: #ffa800;
+}
+
+/* About section */
+
+.frame2 {
+  background: #2e2c2c;
+  height: 110vh;
+  width: 100%;
+  display: flex;
+}
+.frame2 .right-section{
+  width: 35%;
+  height: 100%;
+  background-color: aquamarine;
+  
+}
+
+.frame2 .left-section{
+  width: 65%;
+  height: 100%;
+  background-color: tomato;
+  
 }
