@@ -5,6 +5,7 @@ export default function About() {
     <div className="left-section">
       <div className="about-section">
         <div className="about-txt">
+          {/* about section */}
           <span><span className="bts">A propos</span> de moi</span>
         </div>
         <div className="about-body">
