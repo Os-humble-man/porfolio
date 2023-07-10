@@ -163,7 +163,7 @@ a {
   font-size: 3rem;
   color: #ffff;
 }
-.content {
+.content span {
   width: 80%;
   color: #ffff;
   padding: 10px 20px;
@@ -307,4 +307,43 @@ a {
 
   /* transform: translateX(45%); */
   /* rotate: -45deg; */
+}
+
+/* Skills */
+
+.frame4 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills {
+  width: 45%;
+  height: fit-content;
+  /* background-color: chocolate; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+.skill {
+  width: 300px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.skill1 {
+  background-color: red;
+}
+.skill2 {
+  background-color: aquamarine;
+}
+.skill3 {
+  background-color: rebeccapurple;
+}
+.skill4 {
+  background-color: blue;
 }
