@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "./img/profile.jpeg"
+import profile from "./img/about_img.png";
 export default function About() {
   return <div className="frame frame2">
     <div className="left-section">
@@ -19,25 +19,16 @@ export default function About() {
             quas itaque exercitationem
             aliquam, quia, incidunt facilis
             delectus quae architecto, eum aspernatur
-            voluptatibus tenetur possimus consequatur
-            quaerat mollitia excepturi dolorem ullam labore odit ea? Aperiam!</p>
+            !</p>
 
-          <p>Nam sequi tempora, quam, explicabo reprehenderit tenetur consectetur
-            nesciunt aspernatur praesentium magnam doloribus eum sed ea, sint cupiditate
-            officia earum aperiam consequuntur perspiciatis fuga neque in modi illum unde!
-            Dolor.</p>
         </div>
       </div>
 
 
     </div>
     <div className="right-section">
-
-      <div className="content-section">
-      </div>
       <div className="profil-img">
         <img src={profile} alt="profile pic" />
-
       </div>
     </div>
   </div>;
