@@ -3,6 +3,7 @@ import About from "./components/About";
 import Hero from "./components/Hero";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Skills from "./components/Skills";
+import Divers from "./components/Divers";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <div className="container">
           <Hero />
           <About />
+          <Divers/>
           <Skills />
         </div>
       </div>
