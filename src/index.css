@@ -311,13 +311,22 @@ a {
 
 /* Skills */
 
-.frame4 {
+.frame5 {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   background-color: #282525;
   align-items: center;
+}
+
+.frame4 {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffff;
 }
 
 .skills {

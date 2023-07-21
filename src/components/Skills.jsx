@@ -2,7 +2,7 @@ import React from "react";
 import { skills } from "./data";
 export default function Skills() {
   return (
-    <div className="frame frame4">
+    <div className="frame frame5">
       <div className="skills">
         {skills.map((skill) => (
           <div
