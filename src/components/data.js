@@ -23,7 +23,7 @@ export const skills = [
   {
     id: 4,
     name: "IT Support",
-    ImgUrl:
+    imgUrl:
       "https://img.freepik.com/vecteurs-libre/dans-illustration-du-concept-synchronisation_114360-1029.jpg?w=740&t=st=1689685535~exp=1689686135~hmac=645ff6b44c9d8073fbc2b9831f359771a693498cec5a40c8d9d047002cb9618a",
     gradientColor: ["rgba(118, 3, 172, 0.87)", "rgba(118, 3, 172, 0.87)"],
   },
