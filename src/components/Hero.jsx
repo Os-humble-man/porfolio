@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useCallback } from "react";
 import Typewriter from "typewriter-effect";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { CgMenuRightAlt, CgClose } from "react-icons/cg";
@@ -11,9 +11,23 @@ export default function Hero() {
   const [theme, setTheme] = useState([]);
   const navLink = ["Accueil", "Apropos", "Compétences", "Contactes"];
 
+  const [isScroll, setIsScroll] = useState(false);
+  const handleScroll = useCallback(() => {
+    setIsScroll(state => window.scrollY > 10);
+  }, [])
+
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    // return () => {
+    //   window.removeEventListener('scroll', handleScroll);
+    // };
+  }, []);
+
+
   return (
     <div className="frame frame1">
-      <div className="header">
+      <div className={`header ${isScroll ? 'scrolled' : ''}`}>
         <div className="logo">
           <div>Portfolio</div>
         </div>
@@ -47,10 +61,10 @@ export default function Hero() {
           <CgClose />
         </div>
       </div>
-      <div class="left-side">
+      <div className="left-side">
         <img src={heroimg} alt="hero image" />
       </div>
-      <div class="right-side">
+      <div className="right-side">
         <div className="heading">
           <div className="header-level-1">
             <span>

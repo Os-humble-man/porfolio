@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Grand_Hotel";
+  src: url(Grand_Hotel/GrandHotel-Regular.ttf);
+}
 li {
   list-style: none;
 }
@@ -66,9 +70,10 @@ a {
   justify-content: space-between;
   width: 100vw;
   height: 10vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 
 .header .logo,
@@ -86,7 +91,7 @@ a {
 .logo div {
   color: #ffff;
   font-size: 2.5rem;
-  font-family: "Niconne", cursive;
+  font-family: "Grand_Hotel", cursive;
   text-align: end;
 }
 .header .nav-link ul {
@@ -352,4 +357,8 @@ a {
   font-size: 10px;
   background-position: center;
   background-size: cover;
+}
+
+.scrolled{
+  background-color: #2e2c2c;
 }
