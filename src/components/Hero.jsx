@@ -1,65 +1,25 @@
-import React, { useCallback } from "react";
-import Typewriter from "typewriter-effect";
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { FiSun, FiMoon } from "react-icons/fi";
-import { CgMenuRightAlt, CgClose } from "react-icons/cg";
+import { useState, useEffect, useCallback } from "react";
 import heroimg from "./img/oscar_-_img01.png";
 import hand from "./img/waving-hand.png";
+import Navbar from "./Navbar";
+import SwichTheme from "./SwichTheme";
+import TypeWriter from "./TypeWriter";
+import CallToAction from "./CallToAction";
+
+
+
+
 
 export default function Hero() {
-  const [theme, setTheme] = useState([]);
-  const navLink = ["Accueil", "Apropos", "Compétences", "Contactes"];
-
-  const [isScroll, setIsScroll] = useState(false);
-  const handleScroll = useCallback(() => {
-    setIsScroll(state => window.scrollY > 10);
-  }, [])
-
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    // return () => {
-    //   window.removeEventListener('scroll', handleScroll);
-    // };
-  }, []);
-
 
   return (
     <div className="frame frame1">
-      <div className={`header ${isScroll ? 'scrolled' : ''}`}>
+      <div className={`header`}>
         <div className="logo">
           <div>Portfolio</div>
         </div>
-        <div className="nav-link">
-          <ul>
-            {navLink.map((e, i) => (
-              <li key={i} className={e === "Accueil" ? "active" : "link"}>
-                <Link className={e === "Accueil" ? "active" : "link"} to={e}>
-                  {e}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div
-          className="dark-mode-toggle"
-          onClick={() => {
-            setTheme(theme === "dark" ? "light" : "dark");
-          }}
-        >
-          {theme === "dark" ? (
-            <FiSun className="icon" />
-          ) : (
-            <FiMoon className="icon" />
-          )}
-        </div>
-
-        <div className="hamburger-menu-btn">
-          <CgMenuRightAlt />
-          <CgClose />
-        </div>
+        <Navbar />
+        <SwichTheme />
       </div>
       <div className="left-side">
         <img src={heroimg} alt="hero image" />
@@ -78,26 +38,7 @@ export default function Hero() {
             <span>Je suis Kanangila Oscar</span>
           </div>
           <div className="header-level-3">
-            {/* <span>Je suis</span> */}
-            <div>
-              <Typewriter
-                onInit={(typewriter) => {
-                  typewriter
-                    .typeString("Front-End developper")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("Back-End developper")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("Photographe")
-                    .pauseFor(1000)
-                    .deleteAll()
-                    .typeString("Bienvenue a toi")
-                    .typeString("!!!")
-                    .start();
-                }}
-              />
-            </div>
+            <TypeWriter />
           </div>
           <div className="content">
             <span>
@@ -106,10 +47,7 @@ export default function Hero() {
             </span>
           </div>
         </div>
-        <div className="btns">
-          <span className="btn start">Commencer</span>
-          <span className="btn project">Voir mes realisation</span>
-        </div>
+        <CallToAction />
       </div>
     </div>
   );
