@@ -11,11 +11,11 @@ export default function Navbar() {
     console.log(window.scrollY);
   }
 
-  window.addEventListener('scroll', handleScroll);
+
   // Nav items
   const navLink = ["Accueil", "Apropos", "Compétences", "Contactes"];
   return (
-    <div className="nav-link">
+    <div className="nav-link" onScroll={handleScroll}>
       <ul>
         {navLink.map((e, i) => (
           <li key={i} className={e === "Accueil" ? "active" : "link"}>
