@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import {useEffect} from "react";
 import heroimg from "./img/oscar_-_img01.png";
 import hand from "./img/waving-hand.png";
 import Navbar from "./Navbar";
