@@ -6,6 +6,8 @@ export default function Navbar() {
 
   //change background on scroll
   const [scroll, setScroll] = useState(false);
+  const [active, setActive] = useState(0);
+  const handleClick = (index) => setActive(index);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +26,9 @@ export default function Navbar() {
   }, [])
 
 
+  console.log(window.scrollY);
+
+
 
 
   // Nav items
@@ -32,8 +37,8 @@ export default function Navbar() {
     <div className={`nav-link ${scroll ? 'scrolled' : ''}`}>
       <ul>
         {navLink.map((e, i) => (
-          <li key={i} className={e === "Accueil" ? "active" : "link"}>
-            <Link className={e === "Accueil" ? "active" : "link"} to={e}>
+          <li key={i} className={"link"} onClick={() => handleClick(i)}>
+            <Link className={active === i ? "active" : "link"} to={e}>
               {e}
             </Link>
           </li>

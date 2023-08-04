@@ -1,3 +1,27 @@
+import img2 from '../components/img/techIcon/icons8-css-480.png'
+import img1 from '../components/img/techIcon/icons8-html-480.png'
+import img3 from '../components/img/techIcon/icons8-javascript-480.png'
+import img4 from '../components/img/techIcon/icons8-typescript-240.png'
+import img5 from '../components/img/techIcon/icons8-react-480.png'
+import img6 from '../components/img/techIcon/icons8-tailwind-css-480.png'
+
+import img7 from '../components/img/techIcon/icons8-node-js-240.png'
+import img8 from '../components/img/techIcon/icons8-express-js-500.png'
+import img9 from '../components/img/techIcon/icons8-firebase-480.png'
+import img10 from '../components/img/techIcon/icons8-mysql-480.png'
+import img11 from '../components/img/techIcon/icons8-mongodb-480.png'
+
+import img12 from '../components/img/techIcon/icons8-canva-240.png'
+import img13 from '../components/img/techIcon/icons8-canva-480.png'
+import img14 from '../components/img/techIcon/icons8-figma-480.png'
+import img15 from '../components/img/techIcon/icons8-git-480.png'
+import img16 from '../components/img/techIcon/icons8-github-480.png'
+import img17 from '../components/img/techIcon/icons8-github-500.png'
+import img18 from '../components/img/techIcon/icons8-microsoft-office-480.png'
+
+
+
+
 export const skills = [
   {
     id: 1,
@@ -28,3 +52,68 @@ export const skills = [
     gradientColor: ["rgba(118, 3, 172, 0.87)", "rgba(118, 3, 172, 0.87)"],
   },
 ];
+
+
+
+
+export const tabContent = [
+  {
+    id: 1,
+    title: 'Front End',
+    content: [{
+      title: 'HTML',
+      icon: img1
+    }, {
+      title: 'CSS',
+      icon: img2
+    }, {
+      title: 'JavaScript',
+      icon: img3
+    }, {
+      title: 'React',
+      icon: img5
+    }, {
+      title: 'Tailwind CSS',
+      icon: img6
+    }]
+  }, {
+    id: 2,
+    title: 'Back End',
+    content: [{
+      title: 'Node JS',
+      icon: img7
+    },{
+      title:'Express JS',
+      icon: img8
+    },{
+      title:'Firebase',
+      icon: img9
+    },{
+      title: 'MySQL',
+      icon: img10
+    },{
+      title: 'Mongo db',
+      icon: img11
+    }]
+  }, {
+    id: 3,
+    title: 'Autres',
+    content: [{
+      title: 'Canva',
+      icon: img12
+    },{
+      title: 'Figma',
+      icon: img14
+    },{
+
+      title: 'Git',
+      icon: img15
+    },{
+      title: 'Github',
+      icon: img16
+    },{
+      title:'Microsoft Office',
+      icon : img18
+    }]
+  }
+]
