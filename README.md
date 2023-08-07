@@ -1,5 +1,5 @@
 <div id="header" align="center">
-  <img src="capture.png"/>
+  <img src="./src/assets/images/capture.png"/>
     
 </div>
 ---
