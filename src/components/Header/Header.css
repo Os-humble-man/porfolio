@@ -1,0 +1,217 @@
+.frame1 {
+  background-image: url("../../assets/images/bg.jpg");
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: #ffa800;
+}
+.icon:hover {
+  background-color: #ffa800;
+  padding: 15px;
+  color: #ffff;
+  border-radius: 50%;
+}
+
+.nav-link .link {
+  color: #ffff;
+  font-size: 18px;
+}
+
+.nav-link .active {
+  color: #ffa800;
+  font-size: 22;
+  font-weight: bold;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0px;
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  /* background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); */
+}
+
+.header .logo,
+.header .dark-mode-toggle,
+.header .nav-link {
+  height: 100%;
+}
+.header .logo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 10vw;
+}
+
+.logo div {
+  color: #ffff;
+  font-size: 2.5rem;
+  font-family: "Grand_Hotel", cursive;
+  text-align: end;
+}
+.header .nav-link ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 50px;
+  align-items: center;
+  width: fit-content;
+  min-width: 50vw;
+}
+
+.frame1 .left-side,
+.frame1 .right-side {
+  height: 100%;
+}
+
+.frame1 .left-side {
+  display: flex;
+  justify-content: end;
+  background: linear-gradient(120deg, #ffa800, #be5a11);
+  width: 35%;
+}
+
+.left-side img {
+  height: 100%;
+  transform: scaleX(-1);
+  translate: 5.5vw 0;
+}
+.frame1 .right-side {
+  background: #282525f7;
+  width: 65%;
+}
+.hamburger-menu-btn {
+  display: none;
+}
+.right-side {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  height: 100%;
+}
+.heading {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-level-1 {
+  display: flex;
+  align-items: center;
+}
+.header-level-1 .hand img {
+  width: 70px;
+  height: 70px;
+}
+.heading .header-level-1 span {
+  font-size: 3rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #ffff;
+  font-style: italic;
+}
+
+.header-level-2 {
+  font-size: 44px;
+  color: #ffa800;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+}
+
+.header-level-3 span {
+  font-size: 3rem;
+  color: #ffff;
+}
+.content span {
+  width: 80%;
+  color: #ffff;
+  padding: 10px 20px;
+  line-height: 1.5;
+  padding: 20px 0px 20px;
+}
+
+.btns {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  justify-content: flex-end;
+  gap: 50px;
+}
+.btns .btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btns .start {
+  background-color: #ffa800;
+  position: relative;
+  overflow: hidden;
+  transition: 0.7s all ease;
+}
+
+.btns .start::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  width: 0%;
+  height: 100%;
+}
+
+.btns .start:hover {
+  width: 10%;
+  background: #282525f7;
+  color: #ffa800;
+  border: 2px solid #ffa800;
+}
+
+.btns .project {
+  border: 2px solid #ffa800;
+  color: #ffa800;
+  position: relative;
+  overflow: hidden;
+  transition: 0.7s all ease;
+}
+
+.btns .project::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+  width: 0%;
+  height: 100%;
+}
+.btns .project:hover {
+  background-color: #ffa800;
+  color: #2e2c2c;
+}

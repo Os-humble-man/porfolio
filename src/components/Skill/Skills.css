@@ -1,0 +1,31 @@
+.frame5 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #282525;
+  align-items: center;
+}
+.skills {
+  width: 45%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+.skill {
+  width: 300px;
+  height: 150px;
+  border-radius: 15px;
+}
+.skill1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 10px;
+  background-position: center;
+  background-size: cover;
+}

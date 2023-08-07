@@ -1,5 +1,6 @@
 import React from "react";
 import { skills } from "../../assets/data/data";
+import './Skills.css'
 export default function Skills() {
   return (
     <div className="frame frame5">

@@ -1,4 +1,5 @@
 import {useEffect} from "react";
+import './Header.css'
 import heroimg from "../../assets/images/oscar_-_img01.png";
 import hand from "../../assets/images/waving-hand.png";
 import Navbar from "./Navbar";
