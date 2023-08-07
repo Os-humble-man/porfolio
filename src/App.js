@@ -1,9 +1,9 @@
-import "./App.css";
-import About from "./components/About";
-import Hero from "./components/Hero";
+import "./assets/css/App.css";
+import About from "./components/About/About";
+import Hero from "./components/Header/Hero";
 import { BrowserRouter as Router } from "react-router-dom";
-import Skills from "./components/Skills";
-import Divers from "./components/Divers";
+import Skills from "./components/Skill/Skills";
+import Divers from "./components/Others/Divers";
 import Alltech from "./components/tech_stack/Alltech";
 import { useEffect, useState } from "react";
 

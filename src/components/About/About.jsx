@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "./img/about_img.png";
+import profile from "../../assets/images/about_img.png";
 export default function About() {
   return <div className="frame frame2">
     <div className="left-section">

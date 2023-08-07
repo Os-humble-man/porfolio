@@ -20,9 +20,7 @@ export default function Navbar() {
 
     window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [])
 
 
@@ -34,6 +32,7 @@ export default function Navbar() {
   // Nav items
   const navLink = ["Accueil", "Apropos", "Compétences", "Contactes"];
   return (
+    <div className="navbar">
     <div className={`nav-link ${scroll ? 'scrolled' : ''}`}>
       <ul>
         {navLink.map((e, i) => (
@@ -49,6 +48,7 @@ export default function Navbar() {
         <CgMenuRightAlt />
         <CgClose />
       </div>
+    </div>
     </div>
   );
 }

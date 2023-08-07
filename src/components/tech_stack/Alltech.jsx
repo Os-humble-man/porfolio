@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "../tech_stack/style.css";
-import { tabContent } from "../data";
+import { tabContent } from "../../assets/data/data";
 
 export default function Alltech() {
   const [activeTab, setActiveTab] = useState(0);
   const handleClick = (i) => setActiveTab(i);
   console.log(tabContent[activeTab].icon);
+  
 
   return (
     <div className="container frame frame6">
