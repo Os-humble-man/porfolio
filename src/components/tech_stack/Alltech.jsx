@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "../tech_stack/style.css";
 import { tabContent } from "../../assets/data/data";
+import Tab from "./Tab";
 
 export default function Alltech() {
   const [activeTab, setActiveTab] = useState(0);
   const handleClick = (i) => setActiveTab(i);
-  console.log(tabContent[activeTab].icon);
-  
+  // console.log(tabContent[activeTab].icon);
+
 
   return (
     <div className="container frame frame6">
@@ -33,12 +34,13 @@ export default function Alltech() {
           <div key={index} className="tab-content">
             <div className="tab-icon">
               <div className="tab-img">
-                <img src={tab.icon} alt={tab.title} />
+                <img src={tab.icon} alt={tab.title}  />
               </div>
               <p>{tab.title}</p>
             </div>
           </div>
         ))}
+        {/* <Tab tabItem={tabContent}/> */}
       </div>
     </div>
   );

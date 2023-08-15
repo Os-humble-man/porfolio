@@ -6,6 +6,9 @@ import Skills from "./components/Skill/Skills";
 import Divers from "./components/Others/Divers";
 import Alltech from "./components/tech_stack/Alltech";
 import { useEffect, useState } from "react";
+import Project from "./components/Project/Project";
+import Tab from "./components/tech_stack/Tab";
+import { tabContent } from "./assets/data/data";
 
 function App() {
 
@@ -14,9 +17,9 @@ function App() {
     setscrollDown(event.currentTarget.scrollDown);
   }
 
-  useEffect(()=>{
+  useEffect(() => {
 
-  },[])
+  }, [])
   console.log(scrollDown);
 
   return (
@@ -28,6 +31,7 @@ function App() {
           <Divers />
           <Skills />
           <Alltech />
+          <Project />
         </div>
       </div>
     </Router>
